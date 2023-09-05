@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import { Provider } from 'react-redux';
+import { Stack, Typography } from '@mui/material';
 
-function App() {
+import store from './store';
+import showResults from './showResults';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <Provider store={store}>
+    <Fragment>
+        <Stack spacing={2} direction='row'>
+          <Typography variant='h2' component='h2'>
+            Use Case #8
+          </Typography>
+        </Stack>
+    </ Fragment>
+  </Provider>
   );
-}
+};
 
 export default App;
