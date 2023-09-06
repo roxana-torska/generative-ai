@@ -4,6 +4,7 @@ import { Stack, Typography } from '@mui/material';
 
 import store from './store';
 import showResults from './showResults';
+import Form from './Form';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
             Use Case #8
           </Typography>
         </Stack>
+        <Form onSubmit={showResults} />
     </ Fragment>
   </Provider>
   );
