@@ -10,7 +10,9 @@ const App = () => {
   return (
   <Provider store={store}>
     <Fragment>
-        <Stack spacing={2} direction='row'>
+        <Stack spacing={2} direction='row' sx={{
+        '& .MuiStack-root': { justifyContent: 'center' },
+      }}>
           <Typography variant='h2' component='h2'>
             Use Case #8
           </Typography>

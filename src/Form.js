@@ -1,24 +1,9 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
-import withStyles from '@material-ui/core/styles/withStyles';
-import { SX, Box, Stack, TextField, Button } from '@mui/material';
+import { Box, Stack, TextField, Button } from '@mui/material';
 
 import asyncValidate from './asyncValidate';
 import validate from './validate';
-
-const styles = ({ spacing }) => ({
-  root: {
-    display: 'flex',
-    justifyContent: 'center',
-  },
-  aside: {
-    width: '40%',
-    position: 'relative',
-    marginRight: spacing(4),
-
-  }
-});
-
 
 const renderTextField = (
   { input, label, meta: { touched, error }, ...custom },
@@ -43,9 +28,7 @@ const Form = props => {
       }}
       autoComplete='off'
     >
-      <Stack spacing={2} direction='row' sx={{
-        '& .MuiStack-root': { justifyContent: 'center' },
-      }}>
+      <Stack spacing={2} direction='row'>
         <Field
           data-testid='first-name-field'
           name='firstName'
