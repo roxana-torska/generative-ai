@@ -9,11 +9,17 @@ In the project directory, you can run:
 ### `Project Description`
 
 This React App is generated through CLI. App works locally, and the browser displays the home page. Project contains the Form with fields:
+
 •	the `first_name` and `last_name` with validation on the presents of information;
+
 •	the `email` field with validation on the correctness of the email entered;
+
 •	the `message` field with validation on the length of the message (minimum 10 and maximun 300 characters);
+
 •	state management is generated in a single file;
+
 •	success message is displayed as a simple alert;
+
 
 
 ### `npm start`
