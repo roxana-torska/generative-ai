@@ -62,7 +62,9 @@ const Form = props => {
           component={renderTextField}
         />
       </Stack>
-      <Stack spacing={2} direction='row'>
+      <Stack spacing={2} direction='row' sx={{
+        '& .MuiButtonBase-root': { m: 1.5 },
+      }}>
         <Button
           data-testid='submit-btn'
           variant='contained'
